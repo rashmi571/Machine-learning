@@ -73,6 +73,13 @@ print("Mean squared error: ",np.round(mse,2))
 print("Root mean squared error: ",np.round(rmse,2))
 print("R2 Score: ",np.round(r2,2))
 
+#dram the chart
+plt.scatter(y_test, y_pred)
+plt.xlabel("Actual Charges")
+plt.ylabel("Predicted Charges")
+plt.title("Actual vs Predicted Insurance Charges")
+plt.show()
+
 #input for user 
 try:
     user_data=pd.DataFrame({
